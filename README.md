@@ -10,7 +10,7 @@ This is a solution to the [Workit landing page challenge on Frontend Mentor](htt
 ### Links
 
 - Solution URL: (https://github.com/tacesept/Skilled-e-learning-landing-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://skilled-e-learning-landing-page-idk.netlify.app/)
 
 ## My process
 
