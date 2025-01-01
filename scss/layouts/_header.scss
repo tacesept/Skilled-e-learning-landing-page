@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 16px;
+
+  @media (min-width: 680px) {
+    padding-block: 24px;
+  }
+}

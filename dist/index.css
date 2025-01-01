@@ -1,0 +1,309 @@
+/* plus-jakarta-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/plus-jakarta-sans-v8-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/plus-jakarta-sans-v8-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* plus-jakarta-sans-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/fonts/plus-jakarta-sans-v8-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+:root {
+  /* Colors */
+  --color-blue900: hsl(233, 54%, 16%);
+  --color-blue600: hsl(234, 25%, 52%);
+  --color-pink600: hsl(341, 92%, 62%);
+  --color-pink300: hsl(341, 100%, 83%);
+  --color-gray: hsl(232, 10%, 56%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-gradient-pink: linear-gradient(
+    hsl(13, 100%, 64%),
+    hsl(322, 87%, 55%)
+  );
+  --color-gradient-purple: linear-gradient(
+    hsl(237, 100%, 64%),
+    hsl(322, 87%, 55%)
+  );
+  /* Fonts */
+  --fs-1: clamp(2.5rem, 0.4230769230769229rem + 4.102564102564102vw, 3.5rem);
+  --fs-2: clamp(2rem, 0.9615384615384615rem + 2.051282051282051vw, 2.5rem);
+  --fs-3: clamp(1.5rem, 0.46153846153846145rem + 2.051282051282051vw, 2rem);
+  --fs-4: clamp(1.25rem, 0.7307692307692307rem + 1.0256410256410255vw, 1.5rem);
+  --fs-5: 1.125rem;
+  --fs-6: clamp(0.875rem, 0.6153846153846154rem + 0.5128205128205128vw, 1rem);
+  --fs-7: 1.125rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 28px;
+  transition: 150ms ease-in-out;
+  transition-property: background-color, opacity;
+}
+.button__dark {
+  background: var(--color-blue900);
+  color: var(--color-white);
+}
+.button__dark:hover {
+  background: var(--color-blue600);
+}
+.button__pink {
+  background: var(--color-gradient-pink);
+  color: var(--color-white);
+}
+.button__pink:hover {
+  opacity: 0.5;
+}
+.button__purple {
+  background: var(--color-gradient-purple);
+  color: var(--color-white);
+}
+.button__purple:hover {
+  opacity: 0.5;
+}
+@media (min-width: 680px) and (max-width: 1119px) {
+  .button {
+    padding: 10.5px 24px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page {
+  margin-inline: auto;
+  max-width: 1440px;
+  overflow: hidden;
+}
+
+.wrapper {
+  padding-inline: clamp(20px, 5%, 44px);
+}
+@media (min-width: 75em) {
+  .wrapper {
+    /* 75em = 1200px */
+    max-width: 70em;
+    margin-inline: auto;
+    padding-inline: 0;
+  }
+}
+
+.logo {
+  width: clamp(4.938rem, 3.931rem + 4.295vw, 6.938rem);
+}
+
+body {
+  font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+h1 {
+  color: var(--color-blue900);
+}
+
+p {
+  color: var(--color-gray);
+  line-height: 1.5;
+}
+
+.button {
+  font-size: var(--fs-7);
+  line-height: 1.5;
+}
+
+.hero h1 {
+  font-size: var(--fs-1);
+}
+.hero p {
+  font-size: var(--fs-5);
+}
+
+.courses h2 {
+  font-size: var(--fs-3);
+  color: var(--color-white);
+}
+.courses h3 {
+  font-size: var(--fs-4);
+  color: var(--color-blue900);
+}
+.courses p {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--color-gray);
+}
+.courses a {
+  font-size: var(--fs-7);
+  line-height: 1.5;
+  color: var(--color-pink600);
+  transition: color 150ms ease-in-out;
+}
+.courses a:hover {
+  color: var(--color-pink300);
+}
+@media (min-width: 680px) {
+  .courses p {
+    font-size: var(--fs-5);
+    font-weight: 500;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 16px;
+}
+@media (min-width: 680px) {
+  .header {
+    padding-block: 24px;
+  }
+}
+
+.hero {
+  max-width: 1440px;
+  max-width: 1440px;
+}
+.hero .wrapper {
+  display: grid;
+  row-gap: 48px;
+  padding-block: 64px;
+  position: relative;
+}
+.hero p {
+  margin-block: 24px 40px;
+}
+.hero__image {
+  pointer-events: none;
+  justify-self: center;
+}
+@media (min-width: 680px) {
+  .hero .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+  .hero__text {
+    margin-block: 41.5px;
+  }
+  .hero__image {
+    position: absolute;
+    right: 0;
+    transform: translate(43%, -25%);
+    max-width: none;
+  }
+}
+@media (min-width: 1120px) {
+  .hero__text {
+    margin-block: 110.5px;
+  }
+  .hero__image {
+    transform: translate(43%, -27%);
+  }
+}
+
+.courses {
+  background: linear-gradient(#fff, #f0f1ff);
+}
+.courses .wrapper {
+  display: grid;
+  row-gap: 60px;
+  padding-block: 64px 80px;
+}
+.courses .block {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.courses p {
+  flex-grow: 1;
+}
+.courses .title {
+  background: var(--color-gradient-pink);
+  padding: 32px;
+}
+.courses .course {
+  background-color: var(--color-white);
+  padding: 64px 32px 40px;
+  position: relative;
+}
+.courses img {
+  position: absolute;
+  top: 0;
+  translate: 0px -50%;
+}
+@media (min-width: 680px) {
+  .courses .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+    padding-top: 92px;
+  }
+  .courses .title {
+    padding: 64px 32px 144px;
+  }
+}
+@media (min-width: 1120px) {
+  .courses .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+    row-gap: 84px;
+  }
+}
+
+.footer {
+  padding-block: 24px;
+  background-color: var(--color-blue900);
+}
+.footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=index.css.map */

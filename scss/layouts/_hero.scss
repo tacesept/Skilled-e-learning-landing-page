@@ -1,0 +1,47 @@
+.hero {
+  max-width: 1440px;
+  .wrapper {
+    display: grid;
+    row-gap: 48px;
+    padding-block: 64px;
+    position: relative;
+  }
+
+  p {
+    margin-block: 24px 40px;
+  }
+
+  max-width: 1440px;
+  &__image {
+    pointer-events: none;
+    justify-self: center;
+  }
+
+  @media (min-width: 680px) {
+    .wrapper {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 24px;
+    }
+
+    &__text {
+      margin-block: 41.5px;
+    }
+
+    &__image {
+      position: absolute;
+      right: 0;
+      transform: translate(43%, -25%);
+      max-width: none;
+    }
+  }
+
+  @media (min-width: 1120px) {
+    &__text {
+      margin-block: 110.5px;
+    }
+
+    &__image {
+      transform: translate(43%, -27%);
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.page {
+  margin-inline: auto;
+  max-width: 1440px;
+  overflow: hidden;
+}
+
+.wrapper {
+  padding-inline: clamp(20px, 5%, 44px);
+
+  @media (min-width: 75em) {
+    /* 75em = 1200px */
+    max-width: 70em;
+    margin-inline: auto;
+    padding-inline: 0;
+  }
+}
+
+.logo {
+  width: clamp(4.938rem, 3.931rem + 4.295vw, 6.938rem);
+}

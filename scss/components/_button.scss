@@ -1,0 +1,40 @@
+.button {
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 28px;
+  transition: 150ms ease-in-out;
+  transition-property: background-color, opacity;
+
+  &__dark {
+    background: var(--color-blue900);
+    color: var(--color-white);
+
+    &:hover {
+      background: var(--color-blue600);
+    }
+  }
+
+  &__pink {
+    background: var(--color-gradient-pink);
+    color: var(--color-white);
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__purple {
+    background: var(--color-gradient-purple);
+    color: var(--color-white);
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  @media (min-width: 680px) and (max-width: 1119px) {
+    padding: 10.5px 24px;
+  }
+}
+
+
